@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #6C7289;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EAE2;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: .5em;
+}
+
+.container figure{
+    width: 100%;
+    height: 350px;
+    border-radius: .5em .5em 0 0;
+    background: url(./images/image-product-mobile.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.description {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .25em;
+}
+
+.description h1 {
+    font-family: Fraunces, serif;
+    font-size: 2rem;
+    color: #1C232B;
+}
+
+.description p {
+    line-height: 1.6;
+    font-size: .875rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.price #price-now {
+    font-family: Fraunces, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3D8168;
+}
+
+.price #price-before {
+    text-decoration: line-through;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    gap: .75em;
+    background-color: #3D8168;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.25em;
+    border: none;
+    border-radius: .75em;
+}
+
+footer {
+    position: absolute;
+    bottom: 1vh;
+}
+
+@media (min-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .container figure{
+        height: 100%;
+        border-radius: .5em 0 0 .5em ;
+        background: url(./images/image-product-desktop.jpg) center no-repeat;
+        background-size: cover;
+    }
+}
